@@ -7,7 +7,8 @@ public static void main (String [] args){
 
 Scanner scanner = new Scanner (System.in);
 
-int NUM1, NUM2, NUM3, PRODUCTO, SUMA, NUM;
+int NUM1, NUM2, NUM3, PRODUCTO, SUMA, CONT, NUM=10;
+int [] Numeros = new int [NUM];
 
 System.out.println("Ingrese el Numero 1:");
 NUM1= scanner.nextInt();
@@ -29,14 +30,20 @@ System.out.println("Producto de enteros: "+PRODUCTO);
 
 PRODUCTO=1;
 SUMA=0;
-CONT=1;
+CONT=0;
+NUM=0;
 
-while(CONT<=3){
-
-    System.out.println()
-    NUM=scanner.nextInt();
-
+while(CONT<=2){
+    System.out.println("Ingrese Numero: ");
+    Numeros[NUM]=scanner.nextInt();
+    CONT++;
+    PRODUCTO=PRODUCTO*Numeros[NUM];
+    SUMA=SUMA+Numeros[NUM];
+    NUM++;
 }
+
+System.out.println("Suma de enteros: "+SUMA);
+System.out.println("Producto de enteros: "+PRODUCTO);
 
 //FIN
 }    
