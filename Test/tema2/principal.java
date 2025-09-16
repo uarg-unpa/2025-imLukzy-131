@@ -1,4 +1,4 @@
-package Test.tema1.tema2;
+package Test.tema2;
 import java.util.Scanner;
 
 public class principal {
