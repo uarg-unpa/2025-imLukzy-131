@@ -1,7 +1,7 @@
-package Test.tema3;
-
+package Parcial;
 public class Rectangulo {
     //Atributos
+
     private double base;
     private double altura;
 
@@ -12,31 +12,28 @@ public class Rectangulo {
     }
 
     //Get y Set
-    public double getBase(){
-        return this.base;
-    }
     public double getAltura(){
         return this.altura;
     }
-    public void setBase(double base){
-        this.base=base;
+    public double getBase(){
+        return this.base;
     }
     public void setAltura(double altura){
         this.altura=altura;
     }
+    public void setBase(double base){
+        this.base=base;
+    }
 
     //Metodos
     public double calcularArea(){
-        return this.altura*this.base;
+        return this.base*this.altura;
     }
     public double calcularPerimetro(){
-        return 2*(this.altura+this.base);
+        return ((2*this.base)+(2*this.altura));
     }
     public boolean esMayorElArea(Rectangulo R){
         return calcularArea()>R.calcularArea();
-    }
-    public String mostrarInformacion(){
-        return "Altura: "+this.altura+" | Base: "+this.base+" | Area: "+calcularArea()+" | Perimetro: "+calcularPerimetro()+" |";
     }
     
 }
