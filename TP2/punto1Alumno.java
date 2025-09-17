@@ -31,6 +31,7 @@ public class punto1Alumno {
         claseAlumno alumno2 = new claseAlumno(nombre, apellido, legajo, dni, cantidadMaterias);
 
         System.out.println(alumno2.getAlumno());
+        scanner.close();
         
     }
     

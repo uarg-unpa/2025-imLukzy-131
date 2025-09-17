@@ -45,6 +45,8 @@ while(CONT<=2){
 System.out.println("Suma de enteros: "+SUMA);
 System.out.println("Producto de enteros: "+PRODUCTO);
 
+scanner.close();
+
 //FIN
 }    
 }

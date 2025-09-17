@@ -40,6 +40,8 @@ public class pecera {
             System.out.println("PC1 tiene mas ram");
         else    
             System.out.println("PC1 no tiene mas ram");
+
+        scanner.close();
   
     }
     

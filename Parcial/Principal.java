@@ -35,6 +35,8 @@ public class Principal {
             System.out.println("El rectangulo con mayor area es el R1");
         }else
             System.out.println("El rectangulo con mayor area es el R2");
+
+        scanner.close();
     }
     
 }

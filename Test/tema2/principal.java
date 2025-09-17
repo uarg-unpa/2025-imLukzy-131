@@ -62,6 +62,8 @@ public class principal {
             System.out.println("El producto: "+producto1.getNombre()+" tiene mas stock");
         else
             System.out.println("El producto: "+producto1.getNombre()+" no tiene mas stock");
+
+        scanner.close();
     }
     
 }

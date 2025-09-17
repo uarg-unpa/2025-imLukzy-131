@@ -8,14 +8,16 @@ private String nombre;
 private String apellido;
 private int edad;
 private int dni;
+private Direccion direccion;
 
 //Constructor es el objeto vacio, porque es importante? Para reservar memorias, para crear objetos consistentes, estados estables
-public Persona(String nombre, String apellido, int edad, int dni)
+public Persona(String nombre, String apellido, int edad, int dni, Direccion direccion)
 {
     this.apellido=apellido;
     this.nombre=nombre;
     this.dni=dni;
     this.edad=edad;
+    this.direccion=direccion;
     }
 
 //Metodos set y gets para pedir y modificar datos
@@ -46,10 +48,11 @@ public void setDni(int dni){
 
 //Funciones
 public boolean mayorDeEdad(){
-    if(edad>=18)
-        return true;
-    else
-        return false;
+    return edad>=18;
+}
+
+public String mostrarInformacion(){
+    return "Nombre: "+getNombre()+" "+getApellido()+" | "+"Edad: "+getEdad()+" |"+" DNI: "+getDni()+" |"+"Direccion: "+direccion.getCalle()+" "+direccion.getNumero()+" |";
 }
 
 
