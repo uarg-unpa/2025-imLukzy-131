@@ -46,5 +46,6 @@ System.out.println("Suma de enteros: "+SUMA);
 System.out.println("Producto de enteros: "+PRODUCTO);
 
 //FIN
+scanner.close();
 }    
 }

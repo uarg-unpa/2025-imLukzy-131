@@ -1,4 +1,4 @@
-package Test.tema1.tema2;
+package TestClase.Tema2;
 
 public class Producto {
     //Atributos

@@ -1,6 +1,6 @@
 package TP2;
 
-public class claseAlumno {
+public class Alumno {
 
     //Atributos
     private String nombre;
@@ -11,7 +11,7 @@ public class claseAlumno {
     
 
     //Constructor
-    public claseAlumno(String nombre, String apellido, int legajo, int dni, int cantidadMaterias){
+    public Alumno(String nombre, String apellido, int legajo, int dni, int cantidadMaterias){
         this.nombre=nombre;
         this.apellido=apellido;
         this.legajo=legajo;

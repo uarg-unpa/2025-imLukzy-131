@@ -1,4 +1,4 @@
-package Test.tema1;
+package TestClase.Tema1;
 
 public class pc {
 
