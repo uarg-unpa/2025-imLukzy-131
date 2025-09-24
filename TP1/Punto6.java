@@ -48,5 +48,6 @@ System.out.println("Producto de enteros: "+PRODUCTO);
 scanner.close();
 
 //FIN
+scanner.close();
 }    
 }
