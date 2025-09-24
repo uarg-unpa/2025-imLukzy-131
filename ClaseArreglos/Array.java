@@ -40,6 +40,10 @@ public class Array {
         int [] nums = new int[dim];
 
         //elementos.length para el largo del arreglo
+        for(int i=0; i<nums.length;i++){
+
+            elementos[i]=i*2;
+        }
 
         for(int i=0; i<nums.length;i++){
 

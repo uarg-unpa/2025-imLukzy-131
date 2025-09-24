@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:Test/tema2/principal.java
 package Test.tema2;
-========
-package TestClase.Tema2;
->>>>>>>> 725b1eb3c4f9fe9c763d5ecce703818e11c1b316:TestClase/Tema2/principal.java
 import java.util.Scanner;
 
 public class principal {

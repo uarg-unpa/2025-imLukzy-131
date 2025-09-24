@@ -8,30 +8,34 @@ public class PilaEnteros {
     // Constructor: inicializa el array y la cima
     public PilaEnteros() {
         elementos = new int[MAX]; // Crear el array
-        // Completar: inicializar cima
+        // Inicializar cima
         cima=0;
     }
 
     // Verifica si la pila está vacía
     public boolean estaVacia() {
-        // Completar: devolver true si cima indica que la pila está vacía
-        return false;
+        // Devuelve true si cima indica que la pila está vacía
+        return cima==0;
     }
 
     // Verifica si la pila está llena
     public boolean estaLlena() {
         // Completar: devolver true si cima está en el límite del array
-        return false;
+        return cima==MAX-1;
     }
 
     // Agrega un elemento en la cima (push)
     public void meter(int elem) {
               // Completar: incrementar cima y asignar el elemento
+        this.elementos[cima]=elem;
+        cima++;
     }
 
     // Saca y devuelve el elemento de la cima (pop)
     public int sacar() {
                   // Completar: guardar el elemento de la cima, decrementar cima y devolverlo
+            
+            cima--;
         return elementos[cima];
 
          }
