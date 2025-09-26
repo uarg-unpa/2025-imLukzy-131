@@ -1,4 +1,4 @@
-package Pilas;
+package Pilas.PilaEnteros;
 
 import java.util.Scanner;
 
@@ -8,10 +8,12 @@ public class MenuPila {
         PilaEnteros pila = new PilaEnteros();
         int opcion;
 
+        
         do {
             System.out.println("\n=== MENÚ DE PILA ===");
             System.out.println("1. Meter elemento");
             System.out.println("2. Sacar elemento");
+            System.out.println("3. Ultimo elemento");
             System.out.println("4. Verificar estado (vacía/llena)");
             System.out.println("0. Salir");
             System.out.print("Opción: ");
@@ -37,8 +39,15 @@ public class MenuPila {
                         System.out.println("Elemento sacado: " + elemento);
                     }
                     break;
+                case 3: //Mostrar ultimo elemento
+                    if (pila.estaVacia()){
+                        System.out.println("No hay ultimo elemento.");
+                    }else{
+                        System.out.println("Ultimo elemento: "+pila.ultimoElemento());
+                    }
+                    break;
 
-                         case 4: // Verificar estado
+                case 4: // Verificar estado
                     System.out.println("¿Vacía? " + pila.estaVacia() + " | ¿Llena? " + pila.estaLlena());
                     break;
 
@@ -50,6 +59,7 @@ public class MenuPila {
                     System.out.println("Opción inválida.");
             }
         } while (opcion != 0);
+
 
         sc.close();
     }
