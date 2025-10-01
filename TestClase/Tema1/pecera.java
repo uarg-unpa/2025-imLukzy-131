@@ -1,4 +1,4 @@
-package Test.tema1;
+package TestClase.Tema1;
 import java.util.Scanner;
 
 public class pecera {
