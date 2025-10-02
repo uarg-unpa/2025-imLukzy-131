@@ -10,30 +10,30 @@ public class Principal {
         int opcion;
         
         do {
-            System.out.println("=== MENÚ DE COLA ===");
-            System.out.println("1. Poner en la cola");
-            System.out.println("2. Sacar de la cola");
-            System.out.println("3. Primer elemento");
-            System.out.println("4. Verificar estado (vacía/llena)");
+            System.out.println("\n=== MENÚ DE COLA DE TAREAS (Frente Fijo) ===");
+            System.out.println("1. Encolar tarea (agregar un número)");
+            System.out.println("2. Desencolar tarea(sacar un número)");
+            System.out.println("3. Ver tarea en frente (peek)");
+            System.out.println("4. Mostrar estado (vacía/llena)");
             System.out.println("0. Salir");
             System.out.print("Opción: ");
             opcion = sc.nextInt();
 
             switch (opcion){
                 case 1: // Meter elemento
+                    System.out.println("Ingrese el número de la tarea: ");
+                    int tarea = sc.nextInt();
                     if (cola.estaLlena()) {
-                        System.out.println("Error: La pila está llena.");
+                        System.out.println("Error: La cola está llena (maximo 10 tareas). No se puede encolar: "+tarea);
                     } else {
-                        System.out.print("Ingrese un número: ");
-                        int num = sc.nextInt();
-                        cola.encolar(num);
-                        System.out.println("Elemento " + num + " agregado.");
+                        cola.encolar(tarea);
+                        System.out.println("Tarea: "+tarea+" encolado con exito.");
                     }
                     break;
 
                 case 2: // Sacar elemento
                     if (cola.estaVacia()) {
-                        System.out.println("Error: La pila está vacía.");
+                        System.out.println("Error: La cola esta vacia.");
                     } else {
                         int elemento = cola.desencolar();
                         System.out.println("Elemento sacado: " + elemento);
@@ -41,14 +41,21 @@ public class Principal {
                     break;
                 case 3: //Mostrar ultimo elemento
                     if (cola.estaVacia()){
-                        System.out.println("No hay ultimo elemento.");
+                        System.out.println("Error. La cola esta vacia. No hay tarea en el frente");
                     }else{
-                        System.out.println("Ultimo elemento: "+cola.mostrar());
+                        System.out.println("Tarea en frente: "+cola.mostrar());
                     }
                     break;
 
                 case 4: // Verificar estado
-                    System.out.println("¿Vacía? " + cola.estaVacia() + " | ¿Llena? " + cola.estaLlena());
+                    if (cola.estaVacia()){
+                        System.out.println("Estado: La cola esta vacia.");
+                        }else if(cola.estaLlena()){
+                            System.out.println("Estado: La cola esta llena.");
+                        }   else{
+                                System.out.println("Hay "+cola.cantidad()+" tarea(s)");
+                                
+                        }
                     break;
 
                 case 0: // Salir

@@ -21,7 +21,7 @@ public class ColaInt {
     }
     public void encolar(int elem){
         elementos[fin]=elem;
-        fin++;
+        this.fin++;
     }
     public int desencolar(){
         int aux=elementos[frente];
@@ -29,11 +29,14 @@ public class ColaInt {
         for(int i = 0; i < (fin-1); i++){
             this.elementos[i]=this.elementos[i+1];
         }
-        fin--;
+        this.fin--;
         return aux;
     }
     public int mostrar(){
         return elementos[frente];
+    }
+    public int cantidad(){
+        return this.fin;
     }
 
 
