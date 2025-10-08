@@ -41,7 +41,7 @@ public class MainColaNombres {
         
 
 
-
+        sc.close();
     }
     
 }
