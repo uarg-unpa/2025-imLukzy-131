@@ -1,12 +1,11 @@
-package tp4;
-
+package TP4.Ejercicio1;
 public class ColaCaracteres {
 
     private char [] elementos;
     private int frente;
     private int fin;
     private final int MAX=10;
-
+    
     public ColaCaracteres(){
         this.elementos=new char [MAX];
         this.frente=0;

@@ -1,4 +1,4 @@
-package tp4;
+package TP4.Ejercicio1;
 import java.util.Scanner;
 
 
