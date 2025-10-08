@@ -1,6 +1,6 @@
 package Clases;
 
-public class TestPersona {
+public class testPersona {
 
 public static void main (String [] args){
 
