@@ -38,7 +38,7 @@ public class ColaNombres {
         return (this.frente==this.fin);
     }
     public String mostrar(){
-        return this.elementos[this.frente+1];
+        return this.elementos[this.frente];
     }
 
 
