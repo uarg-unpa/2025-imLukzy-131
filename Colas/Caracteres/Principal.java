@@ -1,12 +1,11 @@
-package TP4.Ejercicio1;
+package Colas.Caracteres;
 import java.util.Scanner;
 
 
 public class Principal {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ColaCaracteres cola = new ColaCaracteres();
+        ColaChar cola = new ColaChar();
         int opcion;
 
         do{
@@ -70,5 +69,6 @@ public class Principal {
 
         
     }
+    
     
 }
