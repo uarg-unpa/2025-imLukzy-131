@@ -22,11 +22,6 @@ public class MainColaNombres {
         nombre=sc.nextLine();
         cola.encolar(nombre);
 
-        //Desencolar y mostrar nombre
-        if (cola.estaVacia())
-            System.out.println("No hay nombres en la cola");
-        else 
-            System.out.println("Nombre desencolado: "+cola.desencolar());
         
         //Mostrar el nombre del frente
         if(cola.estaVacia())
@@ -97,7 +92,7 @@ public class MainColaNombres {
                     break;
             }
         }while (opcion != 0);
-
+        System.out.println("Cantidad: "+cola.contar());
         sc.close();
     }
     
