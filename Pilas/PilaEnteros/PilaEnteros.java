@@ -29,7 +29,6 @@ public class PilaEnteros {
               // Completar: incrementar cima y asignar el elemento
         cima++;
         this.elementos[cima]=elem;
-    
     }
 
     // Saca y devuelve el elemento de la cima (pop)
@@ -37,9 +36,28 @@ public class PilaEnteros {
         // Guarda el elemento de la cima, decrementa cima y lo devuelve
         int elem = elementos[cima];    
         cima--;
-            return elem;
-         }
+        return elem;
+    }
+    public int cantidad(){
+        return (this.cima+1);
+    }
+
     public int ultimoElemento(){
         return elementos[cima];
+    }
+    public boolean buscarElemento(int elem){
+        PilaEnteros auxEnteros = new PilaEnteros();
+        boolean encontrado=false;
+        while(!this.estaVacia()){
+            int sacado = this.sacar();
+            if (sacado!=elem)
+                auxEnteros.meter(sacado);
+            else
+                encontrado=true;
+        }
+        while(!auxEnteros.estaVacia()){
+            this.meter(auxEnteros.sacar());
+        }
+        return encontrado;
     }
 }
