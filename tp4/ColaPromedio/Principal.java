@@ -15,6 +15,9 @@ public class Principal {
         cola.encolar(10);
 
         System.out.println("Promedio: "+cola.calcularPromedio());
+        
+    sc.close();
     }
+
     
 }
