@@ -56,8 +56,6 @@ public class ColaInt {
                 auxiliar.encolar(elemento); 
             }
         }
-
-        
         while (!auxiliar.estaVacia()) {
             encolar(auxiliar.desencolar());
         }
