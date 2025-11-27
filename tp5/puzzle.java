@@ -6,12 +6,10 @@ public class puzzle {
         if(base > limite)
             return -1;
         else
-        if(base == limite)
-            return 1;
-        else
-            return (base * rompecabezas(base + 1, limite));
+            if(base == limite)
+                return 1;
+            else
+                return (base * rompecabezas(base + 1, limite));
     
     }
-    
-
 }
